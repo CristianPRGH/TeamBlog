@@ -14,6 +14,8 @@ class UserControl extends User{
     public function CheckLogin()
     {
         $result = parent::compuser($this->username, $this->password);
+
+        // print_r($result);
         
         if ($result["error"] == 0)
         {

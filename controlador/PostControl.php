@@ -1,11 +1,11 @@
 <?php
 
-class PostControl{ // extends Post{
+class PostControl extends Post{
     private $title;
     private $text;
     //private $img;
 
-    public function __construct($title, $text)
+    public function __construct($title = "", $text = "")
     {
         $this->title = $title;
         $this->text = $text;
@@ -19,7 +19,7 @@ class PostControl{ // extends Post{
 
     public function GetPosts()
     {
-        // $result = parent::GetAllPosts();
-        // return $result;
+        $result = parent::getAllPost();
+        return $result;
     }
 }
