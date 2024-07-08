@@ -1,9 +1,9 @@
-<?php
-    header("Location: ../includes/post-inc.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
-
+<?php/* 
+    header("Location: ../includes/post-inc.php"); */ 
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +19,18 @@
         <a href="PostVista.php">
             <h3>Post: </h3>
         </a>
-    
+    <!-- foreach to print DB data -->
     <div class="container">
-        <div class="item"><strong>Post 1: </strong><br>
+    <?php
+        /* foreach ($result as $post) {
+            
+        } */
+    ?>
+        <!-- <div class="item"><div id="title">Post 1: </div><br>
+            <div id="text"></div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
             interdum vel. Vestibulum pellentesque facilisis dolor, at varius ante placerat non.
+        
         </div>
         <div class="item"><strong>Post 2: </strong><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
@@ -59,8 +66,18 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
             interdum vel. Vestibulum pellentesque facilisis dolor, at varius ante placerat non.
         </div>
-        
-    </div>
+         -->
+  <!--   </div> -->
+<div id="container"> 
+<div  class="item" id="title">s</div>
+<div  class="item" id="text">s</div>
+<div  class="item" id="date">s</div>
+</div> 
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
     <span><a href="PostVista.php">See more posts</a></span>
     </div>
     <hr>
