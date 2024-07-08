@@ -7,7 +7,7 @@ class User extends coneccio{
     public function compuser($username,$pass){
         $error= 0;
         $userid=0;
-        $stmt = $this->conectar()->prepare("SELECT id FROM users WHERE username = ? and password= ? ;");
+        $stmt = $this->conectar()->prepare("SELECT id FROM users WHERE username = ? and pasword= ? ;");
 
         if(!$stmt->execute(array($username, $pass))){
             $error=1;
