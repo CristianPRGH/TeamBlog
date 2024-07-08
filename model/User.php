@@ -17,6 +17,9 @@ class User extends coneccio{
 
             $res=$stmt->fetchAll();
             $userid= $res[0]["id"]; 
+        } else{
+
+            $error=1;
         }
 
         $result= [
