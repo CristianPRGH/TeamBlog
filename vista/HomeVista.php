@@ -1,3 +1,6 @@
+<?php
+    header("Location: ../includes/post-inc.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
