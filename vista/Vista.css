@@ -1,21 +1,42 @@
-header{
+header {
     text-align: center;
 }
+
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
-  }
-  .item {
+}
+
+.item {
     padding: 20px;
     text-align: left;
     border: 1px solid;
     border-end-start-radius: 20px;
     margin: 10px;
-  }
+    width: 350px;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-  input{
+.item:hover {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid;
+    border-end-start-radius: 20px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input {
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
-  }
+}
