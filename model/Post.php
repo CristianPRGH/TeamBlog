@@ -1,7 +1,7 @@
 <?php 
 
 
-class posts extends coneccio{
+class Post extends coneccio{
 
     protected function addPosts($title, $test){
 
