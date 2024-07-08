@@ -16,7 +16,7 @@
         <a href="PostVista.php">
             <h3>Post: </h3>
         </a>
-    </div>
+    
     <div class="container">
         <div class="item"><strong>Post 1: </strong><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
@@ -56,9 +56,12 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
             interdum vel. Vestibulum pellentesque facilisis dolor, at varius ante placerat non.
         </div>
+        
     </div>
-    <a href="PostVista.php">See more posts ></a>
+    <span><a href="PostVista.php">See more posts</a></span>
+    </div>
+    <hr>
+    <footer>Footer</footer>
 </body>
-<footer>Footer</footer>
 
 </html>

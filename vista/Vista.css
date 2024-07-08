@@ -32,3 +32,11 @@ input {
     border-end-start-radius: 20px;
     margin: 10px;
 }
+
+footer{
+    text-align: center;
+}
+
+span{
+    text-align:right !important;
+}
