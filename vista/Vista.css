@@ -19,24 +19,24 @@ header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: 0.3s;
 }
 
 .item:hover {
-    padding: 20px;
-    text-align: left;
-    border: 1px solid;
-    border-end-start-radius: 20px;
-    margin: 10px;
-    width: 500px;
-    height: 500px;
-    /* height: 100px; */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transform: scale(1.09);
+    border: 1.5px solid;
 }
 
 input {
     padding: 10px;
-    border-radius: 20px;
+    border-end-start-radius: 20px;
     margin: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+span{
+    text-align:right !important;
 }
