@@ -29,6 +29,8 @@ header {
 .item:hover {
     transform: scale(1.09);
     border: 1.5px solid;
+    background-color: white;
+    border-color: rgb(22, 22, 141);
 }
 
 input,
@@ -75,3 +77,4 @@ img:hover {
 h1 {
     text-align: center;
 }
+

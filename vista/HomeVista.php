@@ -38,6 +38,7 @@ require "../includes/post-find.php";
             <div class="item">
                 <div id="title"><?= $post['titulo'] ?></div>
                 <div id="text"><?= $post['text'] ?></div>
+                <!-- <div id="img"><img src="<?=$post['img']?>"></div> -->
                 <div id="date"><?= $post['data'] ?></div>
             </div>
             <?php
