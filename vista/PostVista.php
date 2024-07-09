@@ -16,7 +16,7 @@
     <div class="center">
     <form method="post" action="../includes/post-add.php">
         <input type="text" name="title" placeholder="Introduce a title"><br>
-        <textarea name="text" class="text" placeholder="Introduce text"></textarea><br>
+        <textarea name="text" class="text" placeholder="Introduce text" maxlength="100"></textarea><br>
         <input type="text" class="img" name="img" placeholder="Write URL"><br>
         <input type="submit" name="send" class="send" value="Upload">
     </form>
