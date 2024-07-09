@@ -14,6 +14,7 @@ require "../includes/post-inc.php";
 <body>
     <header>
         <h1>Blog</h1>
+        <a href="user-logout.php">Log out</a>
     </header>
     
         <a href="PostVista.php">
