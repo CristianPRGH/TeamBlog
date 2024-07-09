@@ -33,7 +33,7 @@ input {
     margin: 10px;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
@@ -43,18 +43,18 @@ footer{
     width: 100%;
 } */
 
-.text{
+.text {
     width: 400px;
     height: 200px;
 }
 
-img{
+img {
     width: 20px;
     height: 20px;
     transition: 0.3s;
 }
 
-img:hover{
+img:hover {
     width: 20px;
     height: 20px;
     transform: scale(1.20);
