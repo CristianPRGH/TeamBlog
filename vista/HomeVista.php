@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+session_start();
 require "../includes/post-inc.php";
 ?>
 
@@ -14,7 +15,7 @@ require "../includes/post-inc.php";
 <body>
     <header>
         <h1>Blog</h1>
-        <a href="user-logout.php">Log out</a>
+        <a href="../user-logout.php">Log out</a>
     </header>
 
     <a href="PostVista.php">
@@ -36,8 +37,14 @@ require "../includes/post-inc.php";
 
         ?>
     </div>
+    <?php  if($_SESSION["userid"]){
+    
+    ?>
     <a href="PostVista.php"><img
             src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Plus-icon.png"></img></a>
+    <?php    
+    }
+    ?>
     <hr>
     <footer>Footer</footer>
 </body>
