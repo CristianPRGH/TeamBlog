@@ -82,3 +82,9 @@ h1 {
 .size{
     width: 400px;
 }
+
+#title{
+    text-align: center;
+    font-size:large ;
+    font-weight: bold;
+}
