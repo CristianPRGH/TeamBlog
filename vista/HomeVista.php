@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-    /*header("Location: ../includes/post-inc.php"); */ 
+    require "../includes/post-inc.php";
 ?>
 <head>
     <meta charset="UTF-8">
@@ -20,13 +20,34 @@
             <h3>Post: </h3>
         </a>
     <!-- foreach to print DB data -->
-    <div class="container">
+    <div class="container"> 
     <?php
-        /* foreach ($result as $post) {
+        /* print_r($result);
+ */
+        foreach ($result as $post) {
             
-        } */
+        
     ?>
-        <!-- <div class="item"><div id="title">Post 1: </div><br>
+    
+<div class="item"> 
+
+<div  id="title"><?= $post['titulo']?></div>
+<div   id="text"><?= $post['text']?></div>
+<div   id="date"><?= $post['data']?></div>
+</div>
+<?php
+}
+
+?>
+ </div>    
+ <span><a href="PostVista.php">See more posts</a></span>
+    <hr>
+    <footer>Footer</footer>
+</body>
+
+</html>
+
+<!-- <div class="item"><div id="title">Post 1: </div><br>
             <div id="text"></div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
             interdum vel. Vestibulum pellentesque facilisis dolor, at varius ante placerat non.
@@ -66,22 +87,4 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt ante eros, id iaculis lectus
             interdum vel. Vestibulum pellentesque facilisis dolor, at varius ante placerat non.
         </div>
-         -->
-  <!--   </div> -->
-<div id="container"> 
-<div  class="item" id="title"></div>
-<div  class="item" id="text"></div>
-<div  class="item" id="date"></div>
-</div> 
-
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-    <span><a href="PostVista.php">See more posts</a></span>
-    </div>
-    <hr>
-    <footer>Footer</footer>
-</body>
-
-</html>
+         -->  <!--   </div> -->
