@@ -37,6 +37,7 @@ footer{
     text-align: center;
 }
 
-span{
-    text-align:right !important;
-}
+/* a{
+    text-align:right;
+    width: 100%;
+} */
