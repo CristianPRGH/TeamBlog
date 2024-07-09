@@ -30,7 +30,15 @@ require "../includes/post-find.php";
     </header>
 
     <h3>Post: </h3>
+<?php
+    if (isset($_SESSION["userid"])) {
 
+        ?>
+        <a href="PostVista.php"><img
+                src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Plus-icon.png" class="icon"></img></a>
+    <?php
+    }
+    ?>
     <div class="container">
         <?php
         /* print_r($result); */
@@ -39,7 +47,7 @@ require "../includes/post-find.php";
             <div class="item">
                 <div id="title"><?= $post['titulo'] ?></div>
                 <div id="text"><?= $post['text'] ?></div>
-                <div id="img"><img src="<?=$post['img']?>"></div>
+                <div class="img"><img class="img" src="<?=$post['img']?>"></div>
                 <div id="date"><?= $post['data'] ?></div>
             </div>
             <?php
@@ -47,15 +55,7 @@ require "../includes/post-find.php";
 
         ?>
     </div>
-    <?php
-    if (isset($_SESSION["userid"])) {
-
-        ?>
-        <a href="PostVista.php"><img
-                src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Plus-icon.png"></img></a>
-    <?php
-    }
-    ?>
+    
     <hr>
     <footer>Footer</footer>
 </body>
