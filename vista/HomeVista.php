@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 session_start();
-require "../includes/post-inc.php";
+require "../includes/post-find.php";
 ?>
 
 <head>
