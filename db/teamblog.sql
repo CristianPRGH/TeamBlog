@@ -29,6 +29,7 @@ CREATE TABLE `posts` (
   `titulo` varchar(45) NOT NULL,
   `text` varchar(100) NOT NULL,
   `data` date DEFAULT current_timestamp(),
+  `img` longtext DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -39,7 +40,7 @@ CREATE TABLE `posts` (
 
 LOCK TABLES `posts` WRITE;
 /*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (1,'1','Lorem Ipsum is simply dummy text of the print','2024-07-08'),(2,'2','Lorem Ipsum is simply dummy text of the print','2024-07-08'),(3,'3','Lorem Ipsum is simply dummy text of the print','2024-07-08');
+INSERT INTO `posts` VALUES (1,'1','Lorem Ipsum is simply dummy text of the print','2024-07-08',NULL),(2,'2','Lorem Ipsum is simply dummy text of the print','2024-07-08',NULL),(3,'3','Lorem Ipsum is simply dummy text of the print','2024-07-08',NULL);
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-09  9:37:01
+-- Dump completed on 2024-07-09 12:30:03
