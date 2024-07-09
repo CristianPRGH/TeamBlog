@@ -22,7 +22,7 @@ header {
     /* height: 100px; */
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-wrap:wrap;
     transition: 0.3s;
 }
 
