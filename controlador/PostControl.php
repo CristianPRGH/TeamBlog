@@ -36,7 +36,7 @@ class PostControl extends Post{
     
     private function Validaciones()
     {
-        if (empty($title) || empty($text))
+        if (empty($this->title) || empty($this->text))
         {
             return true;
         }
