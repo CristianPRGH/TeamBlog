@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php/* 
-    header("Location: ../includes/post-inc.php"); */ 
+<?php 
+    /*header("Location: ../includes/post-inc.php"); */ 
 ?>
 <head>
     <meta charset="UTF-8">
@@ -69,9 +69,9 @@
          -->
   <!--   </div> -->
 <div id="container"> 
-<div  class="item" id="title">s</div>
-<div  class="item" id="text">s</div>
-<div  class="item" id="date">s</div>
+<div  class="item" id="title"></div>
+<div  class="item" id="text"></div>
+<div  class="item" id="date"></div>
 </div> 
 
 <div></div>
