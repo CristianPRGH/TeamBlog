@@ -5,7 +5,7 @@ class UserControl extends User{
     private $username;
     private $password;
 
-    public function __construct($username, $password)
+    public function __construct($username = "", $password = "")
     {
         $this->username = $username;
         $this->password = $password;
@@ -26,5 +26,11 @@ class UserControl extends User{
         else {
             header("Location: ../vista/LoginVista.php?error=UserPassNotvalid");
         }
+    }
+
+    public function Logout()
+    {
+        session_destroy();
+        header("Location: ../vista/HomeVista.php");
     }
 }
