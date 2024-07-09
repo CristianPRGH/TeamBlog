@@ -15,13 +15,17 @@ require "../includes/post-inc.php";
 <body>
     <header>
         <h1>Blog</h1>
-        <a href="../user-logout.php">Log out</a>
+        <?php
+        if (isset($_SESSION["userid"])) {
+        ?>
+            <a href="../includes/user-logout.php">Log out</a>
+        <?php
+        }
+        ?>
     </header>
 
-    <a href="PostVista.php">
-        <h3>Post: </h3>
-    </a>
-    <!-- foreach to print DB data -->
+    <h3>Post: </h3>
+
     <div class="container">
         <?php
         /* print_r($result); */
@@ -37,12 +41,13 @@ require "../includes/post-inc.php";
 
         ?>
     </div>
-    <?php  if($_SESSION["userid"]){
-    
-    ?>
-    <a href="PostVista.php"><img
-            src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Plus-icon.png"></img></a>
-    <?php    
+    <?php
+    if (isset($_SESSION["userid"])) {
+
+        ?>
+        <a href="PostVista.php"><img
+                src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Plus-icon.png"></img></a>
+    <?php
     }
     ?>
     <hr>

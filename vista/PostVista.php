@@ -15,7 +15,7 @@
     </div>
     <form method="post" action="../includes/post-add.php">
         <input type="text" name="title" placeholder="Introduce a title"><br>
-        <input type="text" name="text" class="text" placeholder="Introduce text"><br>
+        <textarea name="text" class="text" placeholder="Introduce text"></textarea><br>
         <input type="submit" name="send" value="Upload">
     </form>
 </body>
