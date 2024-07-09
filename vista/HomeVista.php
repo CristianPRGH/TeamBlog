@@ -20,7 +20,11 @@ require "../includes/post-inc.php";
         ?>
             <a href="../includes/user-logout.php">Log out</a>
         <?php
-        }
+        }else{
+        ?>
+        <a href="LoginVista.php">Log in</a>
+        <?php
+            }
         ?>
     </header>
 
