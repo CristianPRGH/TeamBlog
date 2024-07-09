@@ -3,12 +3,12 @@
 
 class Post extends coneccio{
 
-    protected function addPosts($title, $test){
+    protected function addPosts($title, $text){
 
         $error= 0;
-        $stmt = $this-> conectar()->prepare("INSERT INTO posts (`titulo`, `test`) VALUES (?, ?);");
+        $stmt = $this-> conectar()->prepare("INSERT INTO posts (`titulo`, `text`) VALUES (?, ?);");
 
-        if(!$stmt->execute(array($title, $test))){
+        if(!$stmt->execute(array($title, $text))){
             $error=1;
         }
 
@@ -22,9 +22,9 @@ class Post extends coneccio{
     protected function getAllPost() {
 
         $error= 0;
-        $stmt = $this->conectar()->prepare("SELECT titulo , test, data FROM posts");
+        $stmt = $this->conectar()->prepare("SELECT titulo , text, data FROM posts");
         if(!$stmt->execute()){
-           
+               
         }
        
         if($stmt->rowCount()>0){
