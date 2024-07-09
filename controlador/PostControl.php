@@ -13,8 +13,13 @@ class PostControl extends Post{
 
     public function AddPost()
     {
-        // $result = parent::addPosts($title, $text);
-        // return $result;
+        $result = parent::addPosts($this->title, $this->text);
+        if ($result == 0)
+        {
+            header("Location: ../vista/HomeVista.php");
+        }else{
+            header("Location: ../vista/PostVista.php?error=AddError");
+        }
     }
 
     public function GetPosts()
