@@ -31,7 +31,7 @@ CREATE TABLE `posts` (
   `data` date DEFAULT current_timestamp(),
   `img` longtext DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `posts` (
 
 LOCK TABLES `posts` WRITE;
 /*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (1,'1','Lorem Ipsum is simply dummy text of the print','2024-07-08',NULL),(2,'2','Lorem Ipsum is simply dummy text of the print','2024-07-08',NULL),(3,'3','Lorem Ipsum is simply dummy text of the print','2024-07-08',NULL);
+INSERT INTO `posts` VALUES (1,'1','Lorem Ipsum is simply dummy text of the print','2024-07-08','https://www.shutterstock.com/image-illustration/view-waterfall-forest-600nw-2327645439.jpg'),(2,'2','Lorem Ipsum is simply dummy text of the print','2024-07-08','https://st5.depositphotos.com/64145070/64693/i/450/depositphotos_646930840-stock-photo-sunset-ocean-beach-beautiful-seascape.jpg'),(3,'3','Lorem Ipsum is simply dummy text of the print','2024-07-08','https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669_1280.jpg'),(4,'nuevo titulo','asdasdasd','2024-07-09','https://www.hofmann.es/content/blog/uploads/2021/09/HF_3_Paisajes_WEB-23.jpg'),(5,'nuevo titulo2','texto','2024-07-09','https://www.hofmann.es/content/blog/uploads/2021/09/HF_3_Paisajes_WEB-23.jpg'),(6,'nuevo titulo3','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis egestas est. Praesent scelerisq','2024-07-09','https://st2.depositphotos.com/1004017/6338/v/450/depositphotos_63386971-stock-illustration-tropical-island-with-palm-trees.jpg');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-09 12:35:08
+-- Dump completed on 2024-07-09 13:08:09
