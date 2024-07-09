@@ -13,7 +13,7 @@ class PostControl extends Post{
 
     public function AddPost()
     {
-        // $result = parent::AddNewPost($title, $text);
+        // $result = parent::addPosts($title, $text);
         // return $result;
     }
 
