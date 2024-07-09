@@ -35,7 +35,7 @@ require "../includes/post-inc.php";
 
             ?>
         </div>
-        <!-- <a href="PostVista.php">See more posts</a> -->
+        <a href="PostVista.php"><img src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Plus-icon.png" ></img></a>
         <hr>
         <footer>Footer</footer>
 </body>

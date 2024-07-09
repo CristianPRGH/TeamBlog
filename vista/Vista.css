@@ -38,6 +38,24 @@ footer{
 }
 
 /* a{
-    text-align:right;
+    float: right;
+    text-align:right; 
     width: 100%;
 } */
+
+.text{
+    width: 400px;
+    height: 200px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+img:hover{
+    width: 20px;
+    height: 20px;
+    transform: scale(1.20);
+}
