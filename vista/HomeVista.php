@@ -26,6 +26,7 @@ require "../includes/post-find.php";
         <?php
             }
         ?>
+        <hr>
     </header>
 
     <h3>Post: </h3>
@@ -38,7 +39,7 @@ require "../includes/post-find.php";
             <div class="item">
                 <div id="title"><?= $post['titulo'] ?></div>
                 <div id="text"><?= $post['text'] ?></div>
-                <!-- <div id="img"><img src="<?=$post['img']?>"></div> -->
+                <div id="img"><img src="<?=$post['img']?>"></div>
                 <div id="date"><?= $post['data'] ?></div>
             </div>
             <?php

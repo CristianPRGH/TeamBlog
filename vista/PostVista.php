@@ -10,13 +10,14 @@
 
 <body>
     <div>
-        <h1>Upload post</h1>
-        <hr>
+        <h1>Upload post<hr></h1>
+        
     </div>
     <div class="center">
     <form method="post" action="../includes/post-add.php">
         <input type="text" name="title" placeholder="Introduce a title"><br>
         <textarea name="text" class="text" placeholder="Introduce text"></textarea><br>
+        <input type="text" class="img" placeholder="Write URL"><br>
         <input type="submit" name="send" value="Upload">
     </form>
     </div>

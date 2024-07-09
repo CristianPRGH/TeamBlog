@@ -41,6 +41,8 @@ textarea {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width: 400px;
+    border-color:rgb(22, 22, 141) ;
 }
 
 /* .center {
@@ -76,5 +78,6 @@ img:hover {
 
 h1 {
     text-align: center;
+    margin-bottom: 50px;
 }
 

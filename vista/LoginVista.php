@@ -10,8 +10,8 @@
 
 <body>
     <div>
-        <h1>Log in</h1>
-        <hr>
+        <h1>Log in<hr></h1>
+        
     </div>
     <form method="post" action="../includes/user-login.php">
         <input type="text" name="username" placeholder="Introduce your name"><br>
